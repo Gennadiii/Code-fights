@@ -30,8 +30,11 @@ current_time = time()
 delay_time *= 60
 wanted_time = current_time + delay_time
 
+count = 1
 while time() < wanted_time:
 	sleep(60)
+	print(int((delay_time - (count * 60))/60))
+	count += 1
 
 start_fight()
 
