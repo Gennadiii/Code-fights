@@ -22,10 +22,9 @@ def start_fight():
 	email_field.send_keys('g.mishchevskii@gmail.com')
 	password_field.send_keys(my_pass)
 	sign_in_button.click()
-	input()
 
+delay_time = int(input('Input a wait time: '))
 while True:
-	delay_time = int(input('Input a wait time: '))
 	current_time = time()
 
 	delay_time *= 60
@@ -38,3 +37,4 @@ while True:
 		count += 1
 
 	start_fight()
+	delay_time = 59
